@@ -1,0 +1,265 @@
+<html lang = "ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content=""/>
+        <title>
+            The Homework
+        </title>
+    </head>
+
+    <body>
+        <header><h1>HTMLについて書くよ！！</h1></header>
+        <ul>
+            <li><a href="#Profile">  プロフィール</a></li>
+            <li><a href="#html">HTMLについて</a> </li>
+            <li><a href="#Main"> 基礎的な構文</a></li>
+        </ul>
+        <section>
+            私たちは頻繁にブラウジングをする。そこで開かれるページは全て同じ言語で書かれている。<br>
+            Youtube,Twitter,Facebockなど挙げるときりがない。<br>
+            ありふれたホームページはどのようにして作られているのだろうか。
+        </section>
+
+        <section id="Profile">
+            <h2>日本大学 文理学部 情報科学科<br>
+            5420063 名越崇晃</h2>
+        </section>
+
+        <div id="html">
+            <h1>HTMLとは？</h1>
+                HTMLとは、ハイパーテキスト・マークアップ・ランゲージ（Hyper Text Markup Language）の略。<br>
+                簡単にいうと、コンピュータが理解できる、マークアップをするための言葉である。<br>
+                マークアップとは、もともと雑誌や新聞の編集用語で、文章構成の指示のことを指す。<br>
+                Web制作では、ホームページ上に表示をしたい文章や写真などの情報に対し、HTMLという言葉で、コンピュータに文章構成を指示することから始まる。<br>
+        </div>
+        <section>    
+            <h1>基礎的な構文</h1>
+            <div id="Main">
+                <p>
+                    今回の課題の内容は<br>
+                    "HTML（WHATWG Living Standard）の「<a href="https://html.spec.whatwg.org/multipage/#toc-semantics" target="_blank">4 The elements of HTML</a>」から好きなHTML要素を3つ以上選び、その説明を行うWebページを作成しましょう。"<br>
+                    とのことなのでいくつか基礎的なものをピックアップし、使い方や似ている単語の違いを紹介する。
+                </p>
+                <div>
+                    <ul>
+                        <li ><a href = "#exp">pの使い方とdivとspanの違い</a></li>
+                        <li><a href = "#exlist">リストの使い方とolとulの違い</a></li>
+                        <li><a href = "#exlink">Linkの埋め込み方</a></li>
+                    </ul>
+                </div>
+            </div>                
+        </section>
+        <section>
+            <div id="exp">
+                <h1>Pの概要</h1>
+                <p>
+                    <blockquote>
+                    HTMLでつかわれるPはもっとも基本的なタグ。
+                   「P」とは「Paragraph」の略。<br>
+                    &ltp&gt ~ &lt/p&gtで囲まれたテキストは1つの段落であることを示す。
+                    </blockquote>
+                </p>    
+
+            </div>
+
+            <div>
+                <h3>divとspanの違い</h3>
+                <p> 似たような単語にdivとspanが存在する。<br>
+                    それらは、段落ではなくまとまりで、主にdivを使い、その枠組みの中でpが使われることが多い
+                </p>
+                <h3>使い方</h3>
+                <p>    
+                使い方は単純で &ltp&gt ~ &lt/p&gtで囲まれたテキストの中に描きたいものを描く。
+                下記が例である。
+                </p>
+                <!--使用例タグはじめ-->
+
+                <div class="line_border">
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code><</code>
+                                        <code>p</code>
+                                        <code>>こんにちは、5420063の名越です<</code>
+                                        <code>/p</code>
+                                        <code>></code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--使用例ボックス終わり-->
+                <p>実行すると…</p>
+                <div class="line_border">
+                    <p>こんにちは、5420063の名越です</p>
+                </div>
+
+            </div>
+        </section> 
+        <section>
+
+            <div id="exlist">
+                <h1>リストの概要</h1>
+                <p>
+                    「LI」とは「list item」の略で、リストの項目を表示するために使用するタグ。<br>
+                    この記事の冒頭の選択肢のようなものはlistで作られたものである。
+                </p>    
+            </div>
+
+            <div>
+                <h3>olとulの違い</h3>
+                <p> 似たような単語にolとulが存在する。<br>
+                    &ltul&gt～&lt/ul&gt または&ltol&gt～&lt/ol&gtの間で使用する。<br>
+                    &ltul&gtタグはリスト項目に順序を付けたくない場合に使用する。<br>
+                    リストは箇条書きで表記され、項目の間に順番や序列は発生しない。<br>
+                    逆に順番を明らかにしたい場合は&ltol&gtを使用すると項目が順番付きのリストとなる                  
+                </p>
+                <h3>使い方</h3>
+                <p>    
+                使い方は &ltol&gt ~ &lt/ol&gtで囲まれたテキストの中に&ltli&gt ~ &lt/li&gtを作り、<br>
+                その囲まれた枠の中に指定したい文字を入れる・
+
+                下記が例である。
+                </p>
+                <!--使用例タグはじめ-->
+
+                <div class="line_border">
+                    <div class="line alt1">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code><</code>
+                                        <code>ol></code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="line alt2">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code><</code>
+                                        <code>li></code>
+                                        <code>課題が終わらない件<</code>
+                                        <code>/li></code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="line alt3">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code><</code>
+                                        <code>li></code>
+                                        <code>まじで終わらない件<</code>
+                                        <code>/li></code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="line alt4">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code><</code>
+                                        <code>li></code>
+                                        <code>そうだ、大声をだして課題をかき消すナリ<</code>
+                                        <code>/li></code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="line alt1">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code><</code>
+                                        <code>/ol></code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>                                        
+                </div>
+                <!--使用例ボックス終わり-->
+                <p>実行すると…</p>
+                <div class="line_border">
+                    <ol>
+                        <li>課題が終わらない件</li>
+                        <li>まじで終わらない件</li>
+                        <li>そうだ、大声をだして課題をかき消すナリ</li>
+                    </ol>
+                </div>
+            </div>
+        
+        
+        </section> 
+        <section>
+            <div id="exlink">
+                <h1>aの概要</h1>
+                <p>
+                    <blockquote>
+                        「A」とは、「Anchor（アンカー）」の略で、リンクの出発点や到達点を指定するタグ。<br>
+                        リンクの出発点を示す場合は、href属性でリンク先を指定し、到達点を示す場合はname属性やid属性を使用し、その場所の名前（識別子）を指定する。    
+                    </blockquote>
+                </p>    
+
+            </div>
+
+            <div>
+                <h3>aの属性</h3>
+                <p> aはそのタグに加え、属性を加えることで初めて効果を発揮する。<br>
+                    たとえば、領域をクリックした際のリンク先を指定したい場合、hrefという属性を使う。<br>
+                    使ってみるとこんな感じ-><a href="https://esa-pages.io/p/sharing/8704/posts/2857/a3a27e18bd5b908dff48.html" target="_blank">尾上先生の課題</a><br>
+                    それに加え、targetという属性を使うことで、リンク先の文書を表示させる方法を指定できる。<br>
+                    例えば、先ほどのリンクでは、"_blank"を使うことで、新しいタブで開いている。
+
+                </p>
+                <h3>使い方</h3>
+                <p>    
+                     使い方は単純で &lta&gt ~ &lt/a&gtで囲まれたテキストの中に描きたいものを描く。<br>
+                    また、&lt&gt内で属性も入れる。
+                </p>
+                <!--使用例タグはじめ-->
+
+                <div class="line_border">
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <code><</code>
+                                        <code>a href="https://esa-pages.io/p/sharing/8704/posts/2857/a3a27e18bd5b908dff48.html" target = "_blank"</code>
+                                        <code>>今回の課題のリンクです。<</code>
+                                        <code>/a</code>
+                                        <code>></code>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--使用例ボックス終わり-->
+                <p>実行すると…</p>
+                <div class="line_border">
+                    <a href="https://esa-pages.io/p/sharing/8704/posts/2857/a3a27e18bd5b908dff48.html" target = "_blank">今回の課題のリンクです。</a>
+                </div>
+
+            </div>
+        </section> 
+        <footer>@日本大学文理学部情報科学科 Webプログラミングの演習課題</footer>
+    </body>
+</html>
